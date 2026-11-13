@@ -76,3 +76,5 @@ non officielle, sans affiliation aux organismes représentés.
 Version 1.2.0 : icône et bandeau PRO-DATE validés.
 
 Version 1.3.0 : bandeau Multi-services pleine largeur, dégradé et logo PRO-DATE avec ruban tricolore.
+
+Version 1.5.7 : bandeau inchangé ; zoom désactivé ; tricolore Police aligné horizontalement.

@@ -138,3 +138,23 @@ button,input,select,textarea{font:inherit}button{cursor:pointer;-webkit-tap-high
   .hero.hero-home {margin-left:-25px !important;margin-right:-25px !important;width:calc(100% + 50px) !important}
   .hero.hero-home + .stats {margin-top:-15px !important}
 }
+
+/* v1.5.7 : drapeau Police toujours sur une seule ligne */
+.nav-police {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1px !important;
+  flex-shrink: 0 !important;
+  width: 22px !important;
+  min-width: 22px !important;
+  white-space: nowrap !important;
+}
+.nav-police i {
+  flex: 0 0 6px !important;
+  width: 6px !important;
+  min-width: 6px !important;
+}
+.cat-circle .nav-police { transform: scale(1.15); }
