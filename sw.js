@@ -1,5 +1,5 @@
 /* PRO-DATE — cache hors ligne (aucune donnée personnelle dans ce cache). */
-const CACHE_NAME = 'echeances-pro-v1.1.0';
+const CACHE_NAME = 'echeances-pro-v1.2.0';
 const APP_ASSETS = [
   './','index.html','styles.css','app.js','manifest.webmanifest',
   'icon-192.png','icon-512.png','apple-touch-icon.png',

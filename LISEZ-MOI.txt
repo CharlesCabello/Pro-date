@@ -72,3 +72,5 @@ Les logos sont des références visuelles pour une application personnelle
 non officielle, sans affiliation aux organismes représentés.
 
 © PRO-DATE — Usage personnel — Version 1.1.0
+
+Version 1.2.0 : icône et bandeau PRO-DATE validés.
