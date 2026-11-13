@@ -1,0 +1,74 @@
+PRO-DATE — VERSION 1.0.0
+================================
+
+Application personnelle de suivi des échéances professionnelles.
+Interface claire de style iPhone, 5 onglets : Accueil, Gendarmerie,
+Police, Hélicoptère, Réglages.
+
+INSTALLATION SUR IPHONE
+----------------------
+1. Décompresser l'archive ZIP sur un ordinateur.
+2. Mettre en ligne LE CONTENU du dossier sur un hébergement HTTPS.
+   Exemple : Netlify → ajouter un nouveau site → déploiement manuel
+   en déposant le dossier décompressé ou son contenu.
+   Tous les fichiers doivent rester ensemble à la racine du site.
+3. Sur l'iPhone, ouvrir l'adresse HTTPS du site avec Safari.
+4. Bouton Partager → « Sur l'écran d'accueil » → « Ajouter ».
+5. Ouvrir PRO-DATE depuis son icône sur l'écran d'accueil.
+
+Vous pouvez ensuite utiliser l'interface hors connexion après sa
+première ouverture en ligne. Les données sont stockées localement
+sur cet iPhone dans l'espace de stockage de l'application.
+
+UTILISATION
+-----------
+- Ajouter une échéance : choisir le service, l'intitulé, le type,
+  la date d'expiration, les rappels et éventuellement la récurrence.
+- Joindre un PDF ou une image (jusqu'à 8 Mo) et écrire des notes.
+- Suivre les échéances sur l'Accueil et dans chaque rubrique.
+- Renouveler : proposer automatiquement la date suivante lorsque
+  la récurrence est paramétrée ; l'ancienne date reste dans l'historique.
+- Marquer comme réalisée, réactiver, modifier ou supprimer une fiche.
+- Dans Réglages : personnaliser les rappels par défaut, exporter un
+  fichier Calendrier, sauvegarder et restaurer l'ensemble des données.
+
+RAPPELS IPHONE : À LIRE
+-----------------------
+L'application vérifie les dates à l'ouverture, et peut afficher des
+notifications durant son utilisation si l'autorisation est accordée.
+
+IMPORTANT : Cette application web locale n'a pas de serveur de push
+ou d'envoi de mails. Elle ne peut donc pas déclencher seule une
+notification ou un e-mail lorsque l'application est complètement fermée.
+Pour recevoir des alertes en dehors de l'application :
+- ouvrir une échéance → « Ajouter au Calendrier iPhone » ; ou
+- Réglages → « Exporter toutes les échéances ».
+Un fichier .ics est généré avec les rappels avant la date d'expiration.
+Importer ce fichier dans un calendrier compatible et autoriser les
+notifications de ce calendrier sur l'iPhone. Selon la version d'iOS,
+l'import peut nécessiter de passer par Fichiers, Mail ou une application
+calendrier qui accepte les fichiers .ics.
+Après modification ou renouvellement d'une échéance, réexporter
+l'événement et retirer l'ancien dans Calendrier pour éviter les doublons.
+Le comportement des alertes .ics dépend de l'application Calendrier.
+
+DONNÉES ET CONFIDENTIALITÉ
+-------------------------
+Aucun compte ni serveur de collecte. Le stockage local peut toutefois
+être effacé si les données du navigateur/application sont supprimées.
+Dans Réglages, exporter régulièrement une sauvegarde JSON. Elle inclut
+vos documents et notes ; le fichier n'est pas chiffré. Conservez-le
+dans un emplacement privé (par exemple iCloud Drive sécurisé).
+Pour changer d'iPhone, importer cette sauvegarde sur le nouvel appareil.
+Les dates réglementaires ne sont pas préchargées : chaque utilisateur
+doit les vérifier auprès de son autorité de référence.
+
+TECHNIQUE
+---------
+Fichiers autonomes, sans dépendance externe : index.html, styles.css,
+app.js, sw.js, manifest.webmanifest, icônes et ressources visuelles.
+PWA hors ligne après premier chargement sur HTTPS, stockage IndexedDB.
+Les logos sont des références visuelles pour une application personnelle
+non officielle, sans affiliation aux organismes représentés.
+
+© PRO-DATE — Usage personnel — Version 1.1.0
