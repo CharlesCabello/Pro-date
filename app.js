@@ -1,6 +1,6 @@
 'use strict';
 /* PRO-DATE — v1.1.0. Dépendances : aucune. Données stockées dans IndexedDB. */
-const APP_VERSION = '1.5.4';
+const APP_VERSION = '1.5.6';
 const DB_NAME = 'echeances-pro-db';
 const MAX_DOCUMENT_SIZE = 8 * 1024 * 1024;
 const CATEGORIES = {
@@ -12,7 +12,7 @@ const ICONS = {
   home:'<path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/>',
   calendar:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18M8 14h3m2 0h3M8 18h3"/>',
   bell:'<path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/>',
-  settings:'<path d="M12 3.5 14 5l2.4-.4.9 2.3 2.3 1 .1 2.6 1.7 1.5-1.7 1.8-.1 2.4-2.3 1.1-.9 2.2-2.4-.4-2 1.5-2-1.5-2.4.4-.9-2.2-2.3-1.1-.1-2.4L2.6 12l1.7-1.5.4-2.6 2.3-1 .9-2.3L10 5z"/><circle cx="12" cy="12" r="3"/>',
+  settings:'<path d="M12 3.5 14 5l2.4-.4.9 2.3 2.3 1 .1 2.6 1.7 1.5-1.7 1.8-.1 2.4-2.3 1.1-.9 2.2-2.4-.4-2 1.5-2-1.5-2.4.4-.9-2.2-2.3-1.1-.1-2.4L2.6 12l1.7-1.5.6-2.6 2.3-1 .9-2.3L10 5z"/><circle cx="12" cy="12" r="3"/>',
   plus:'<path d="M12 5v14M5 12h14"/>',
   chevron:'<path d="m9 18 6-6-6-6"/>',
   back:'<path d="m15 18-6-6 6-6"/>',
