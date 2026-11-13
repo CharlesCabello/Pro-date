@@ -1,6 +1,6 @@
 'use strict';
 /* PRO-DATE — v1.1.0. Dépendances : aucune. Données stockées dans IndexedDB. */
-const APP_VERSION = '1.5.7';
+const APP_VERSION = '1.5.8';
 const DB_NAME = 'echeances-pro-db';
 const MAX_DOCUMENT_SIZE = 8 * 1024 * 1024;
 const CATEGORIES = {
@@ -12,7 +12,7 @@ const ICONS = {
   home:'<path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/>',
   calendar:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18M8 14h3m2 0h3M8 18h3"/>',
   bell:'<path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/>',
-  settings:'<path d="M12 3.5 14 5l2.4-.4.9 2.3 2.3 1 .1 2.6 1.7 1.5-1.7 1.8-.1 2.4-2.3 1.1-.9 2.2-2.4-.4-2 1.5-2-1.5-2.4.4-.9-2.2-2.3-1.1-.1-2.4L2.6 12l1.7-1.5.7-2.6 2.3-1 .9-2.3L10 5z"/><circle cx="12" cy="12" r="3"/>',
+  settings:'<path d="M12 3.5 14 5l2.4-.4.9 2.3 2.3 1 .1 2.6 1.7 1.5-1.7 1.8-.1 2.4-2.3 1.1-.9 2.2-2.4-.4-2 1.5-2-1.5-2.4.4-.9-2.2-2.3-1.1-.1-2.4L2.6 12l1.7-1.5.8-2.6 2.3-1 .9-2.3L10 5z"/><circle cx="12" cy="12" r="3"/>',
   plus:'<path d="M12 5v14M5 12h14"/>',
   chevron:'<path d="m9 18 6-6-6-6"/>',
   back:'<path d="m15 18-6-6 6-6"/>',
@@ -23,7 +23,7 @@ const ICONS = {
   target:'<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
   medical:'<rect x="3" y="3" width="18" height="18" rx="5"/><path d="M12 7v10M7 12h10"/>',
   plane:'<path d="M21 3 9.5 12 4 10l-2 2 7 4 4 6 2-2-2-6L21 3z"/>',
-  helicopter:'<path d="M3 14h3l3-5h6a4 4 0 0 1 4 4v2h-3l-2 3H9l-4-3H3zm6 4-2 3m10-3 2 3M4 7h16M12 4v3m-5 8h7m6-3h2"/>',
+  helicopter:'<path d="M2 5.3h20M11 5.3v2.3M9.7 7.6h2.6"/><path d="M5.2 13.4c0-2.9 2.4-5.2 5.2-5.2h2.4c2.2 0 3.6 1.2 4.3 3.5l4.2 1.3v1.5l-4.5-.5c-.9 1.5-2.6 2.4-4.7 2.4H9.1c-2.2 0-3.9-1-3.9-3z"/><path d="M8.3 9.4c-1.1 1.2-1.6 2.5-1.5 4.3h5.3V9.2M7.7 16.4l-1.1 2.4m9-2.4 1.1 2.4M4.3 19h14.4m2.6-7.4v4.3m-1.3-2.1h2.6"/>',
   shield:'<path d="m12 2 8 4v6c0 5.5-3.5 8.5-8 10-4.5-1.5-8-4.5-8-10V6z"/><path d="m8.5 12 2.4 2.4 4.8-4.8"/>',
   flame:'<path d="M12 2c0 5-6 6-6 12a6 6 0 0 0 12 0c0-4-2-6-3-7-.3 2-1.6 3-2 3-1-1-1-4-1-8z"/><path d="M12 12c-2 2-3 3.3-3 5a3 3 0 0 0 6 0c0-1.2-1-2.4-3-5"/>',
   repeat:'<path d="m17 2 4 4-4 4M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4m14-1v2a3 3 0 0 1-3 3H3"/>',
