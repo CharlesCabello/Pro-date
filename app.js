@@ -1,6 +1,6 @@
 'use strict';
 /* PRO-DATE — v1.1.0. Dépendances : aucune. Données stockées dans IndexedDB. */
-const APP_VERSION = '1.4.0';
+const APP_VERSION = '1.5.1';
 const DB_NAME = 'echeances-pro-db';
 const MAX_DOCUMENT_SIZE = 8 * 1024 * 1024;
 const CATEGORIES = {
