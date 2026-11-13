@@ -50,7 +50,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer;-webkit-tap-high
 .hero-home + .stats{
   position:relative;
   z-index:2;
-  margin-top:-14px !important;
+  margin-top:-5px !important;
   margin-bottom:10px;
   padding:0 12px;
 }
@@ -72,5 +72,5 @@ button,input,select,textarea{font:inherit}button{cursor:pointer;-webkit-tap-high
     width:calc(100% + 50px);
     margin-top:calc(-1 * (env(safe-area-inset-top,0px) + 8px));
   }
-  .hero-home + .stats{padding:0 16px;margin-top:-18px !important}
+  .hero-home + .stats{padding:0 16px;margin-top:-7px !important}
 }
