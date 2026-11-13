@@ -33,3 +33,24 @@ button,input,select,textarea{font:inherit}button{cursor:pointer;-webkit-tap-high
 .hero-home .hero-sheen{display:none}
 .home-quick-actions{display:flex;justify-content:flex-end;gap:4px;margin:4px 0 7px}
 @media(min-width:700px){.hero-home{height:auto;margin-left:-25px;margin-right:-25px;width:calc(100% + 50px)}}
+
+/* v1.4 : bandeau abaissé sous la zone iOS, plus haut, cartes chevauchantes */
+.hero-home{
+  margin-top:0 !important;
+  aspect-ratio: auto !important;
+  height:clamp(225px,64vw,315px) !important;
+  overflow:hidden;
+}
+.hero-home img{object-fit:fill}
+.home-quick-actions{display:flex;justify-content:flex-end;gap:10px;margin:9px 0 10px}
+.hero-home + .stats{
+  position:relative;z-index:2;
+  margin-top:-40px !important;
+  margin-bottom:6px;
+  padding:0 8px;
+}
+.hero-home + .stats .stat{
+  box-shadow:0 5px 17px rgba(13,40,82,.09);
+  border-radius:15px;
+}
+@media(min-width:700px){.hero-home{height:315px !important}}
